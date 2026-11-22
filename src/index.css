@@ -1,0 +1,195 @@
+/* imports */
+@import "tailwindcss";
+
+
+/* Tell to tailwind */
+@theme inline {
+  /* Colors */
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-border: var(--border);
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+
+  /* Typography */
+
+  --font-kalameh: var(--font-primary);
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+
+    /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+
+
+/* Font famlily
+/////////////////////// */
+
+@font-face {
+  font-family: Kalameh;
+  src: url("./assets/fonts/KalamehWeb-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Kalameh;
+  src: url("./assets/fonts/KalamehWeb-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Kalameh;
+  src: url("./assets/fonts/KalamehWeb-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* Main design */
+
+:root {
+  color-scheme: dark;
+
+  /* Main colors */
+  --primary:#aabbca;
+  --primary-hover:#6EB0E9 ;
+
+  /* Background color */
+  --background: #272727;  
+  --surface: #303030;
+
+  /* Text Colors */
+  --text-primary: #F2F4F7;
+  --text-secondary: #A5ADB8;
+
+  /* Border */
+  --border: #414141;
+
+  /* Status */
+  --success: #16a36a;
+  --danger: #e04f5f;
+  --warning: #e5a52b;
+
+  /* Type of text */
+  --font-primary: "Kalameh", sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Spacing */
+
+--spacing-xs: 4px;
+--spacing-sm: 8px;
+--spacing-md: 16px;
+--spacing-lg: 24px;
+--spacing-xl: 32px;
+--spacing-2xl: 48px;
+
+/* Typography */
+
+--font-size-xs: 12px;
+--font-size-sm: 14px;
+--font-size-md: 16px;
+--font-size-lg: 18px;
+--font-size-xl: 24px;
+--font-size-2xl: 32px;
+
+/* Shadows */
+
+--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+/* Transitions */
+
+--transition-fast: 150ms ease;
+--transition-normal: 250ms ease;
+--transition-slow: 350ms ease;
+}
+
+/* Light Theme */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  /* Main colors */
+  --primary: #287FBD;
+  --primary-hover: #1D6FA8;
+
+  /* Background color */
+  --background: #F5F7FA;
+  --surface: #FFFFFF;
+
+  /* Text Colors */
+  --text-primary: #202936;
+  --text-secondary: #697586;
+
+  /* Border */
+  --border: #E0E5EB;
+
+  /* Status */
+  --success: #128457;
+  --danger: #D93649;
+  --warning: #C58A19;
+}
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* یاد اوری استفاده نشد حذف کنیم */
+button, input, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
